@@ -9,3 +9,11 @@ script:
 - npm install
 - echo 'Testing'
 - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: c63c28e3-2c6a-4930-8a35-70cd1f7031c0
+  app: labs5
+  on:
+    repo: EmilieCrtn/Labs5_DevOps
+
